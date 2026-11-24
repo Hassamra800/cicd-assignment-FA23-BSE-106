@@ -33,7 +33,7 @@ def test_main_heading(driver):
 def test_name_and_roll_number(driver):
     driver.get(BASE_URL)
     assert driver.find_element(By.ID, "student").text == "Name: Muhammad Hassam Raza"
-    assert driver.find_element(By.ID, "roll").text == "Roll Number: FA23-BSE-106"
+    assert driver.find_element(By.ID, "roll").text == "Roll Number: FA23-BSE-106 (deployed automatically by webhook)"
 
 def test_button_click(driver):
     driver.get(BASE_URL)
